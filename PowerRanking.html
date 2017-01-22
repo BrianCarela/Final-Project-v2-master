@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NYC PR</title>
+		<link rel="shortcut icon" type="image/x-icon" href="imgs/72x72.png">
+		<link rel="stylesheet" type="text/css" href="templatestyle.css">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Orbitron" rel="stylesheet">
+	</head>
+	<body id="bg">
+		<header>
+			<img src="imgs/HouseLogo.png" id="logo">
+			<ul id="topul">
+				<li class="bars">
+					<a  class="nav" href="index.html">Home</a>
+				</li>
+				<li class="bars">
+					<a  class="nav" href="AboutUs.html">About Us</a>
+				</li>
+				<li class="bars">
+					<a  class="nav" href="Stream.html">Stream</a>
+				</li>
+				<li class="bars">
+					<a  class="nav" href="Weeklies.html">Weeklies</a>
+				</li>
+				<li class="bars">
+					<a  class="nav" id="currenttab" href="PowerRanking.html">NYC's Power Ranking</a>
+				</li>
+				<li class="bars">
+					<a  class="nav" href="Events.html">Upcoming Events</a>
+				</li>
+			</ul>
+		</header>
+		<center><div id="content">
+			<h1 id="pagetitle">Our Top Players!</h1>
+			<img class="pR" width="720px" height="600px" src="imgs/2015_Q3.jpg">
+			<img class="pR" width="720px" height="600px" src="imgs/2015_Q4.jpg">
+			<img class="pR" width="720px" height="600px" src="imgs/2016_Q1.jpg">
+			<img class="pR" width="720px" height="600px" src="imgs/2016_Q2.png">
+			<img class="pR" width="720px" height="600px" src="imgs/2016_Q3.png">
+		<button class="butt" id="back" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="butt" id="forward" onclick="plusDivs(+1)">&#10095;</button>
+		</div></center>
+		<footer>
+			<a href="ContactUs.html" id="contact">Contact Us!</a> Our social media: 
+			<a href="https://www.twitch.tv/houseof3000" target="_blank"><img class="socialicons" src="imgs/twitch.png"></a>
+			<a href="https://www.youtube.com/user/HouseOf3000" target="_blank"><img class="socialicons" src="imgs/youtube.png"></a>
+			<a href="https://twitter.com/houseof3000" target="_blank"><img class="socialicons" src="imgs/twitter.png"></a>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("pR");
+			if (n > x.length) {slideIndex = 1} //if bigger than the final image, go back to the first picture
+			if (n < 1) {slideIndex = x.length} //if going before the first image, go to the last image
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			} //any other images, move up accordingly
+			x[slideIndex - 1].style.display = "block";
+		}
+	</script>
+</html>
