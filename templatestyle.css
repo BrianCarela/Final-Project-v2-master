@@ -65,29 +65,6 @@ body img{
 	width: 460px;
 	height: 280px;
 }
-#nameadd{
-	text-align: center;
-	font-weight: bold;
-	font-style: italic;
-}
-#resume{
-	text-align: center;
-}
-.restitle{
-	text-align: center;
-	font-size: larger;
-	font-weight: bold;
-}
-.position{
-	font-style: italic;
-}
-.workdates{
-	font-size: smaller;
-}
-.links{
-	color: rgb(174,129,255);
-	font-weight: bold;
-}
 /*#biotitle{
 	color: rgb(174,129,255);
 	text-shadow:  

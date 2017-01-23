@@ -47,13 +47,13 @@ header{
 #content{
 	background-color: white;
 	border: solid;
-	width: 1000px;
+	width: 728px;
 	color: black;
 }
 article{
 	text-align: justify, center;
 	max-width: 600px;
-	margin: 0 auto;
+	margin-bottom: 5px;
 }
 body img{
 	display: block;
@@ -63,7 +63,7 @@ body img{
 	font-family: 'Droid Serif', serif;
 	text-align: justify, center;
 	margin: 0%;
-	background-image: url(subtlebackgrounds/stardust.png);
+	background-image: url(subtlebackgrounds/hixs_pattern_evolution.png);
 	color: white;
 }
 #logo{
@@ -98,4 +98,19 @@ footer{
 	width: 36px;
 	height: 36px;
 	display: inline-block;
+}
+.names, .ntitle{
+	font-family: 'Nova Slim', cursive;
+}
+.social{
+	color: black;
+	font-family: 'Nova Slim', cursive;
+	line-height: 36px;
+}
+#poster{
+	margin-bottom: 5px;
+}
+.pR{
+	width: 720px; 
+	height: 600px; 
 }
