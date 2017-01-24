@@ -158,7 +158,7 @@ footer, .push {
 }
 #devtwitter:hover, #helptwitter:hover, #autwitter:hover{
 	background-color: blue;
-	color: black;
+	color: white;
 	transition: 0.5s;
 }
 #autwitch{
@@ -166,6 +166,6 @@ footer, .push {
 }
 #autwitch:hover{
 	background-color: purple;
-	color: black;
+	color: white;
 	transition: 0.5s;
 }
