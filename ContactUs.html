@@ -7,11 +7,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Orbitron" rel="stylesheet">
 	</head>
 	<body id="bg">
+		<div class="wrapper">
 		<header>
 			<img src="imgs/HouseLogo.png" id="logo">
 			<ul id="topul">
 				<li class="bars">
-					<a  class="nav" href="index.html">Home</a>
+					<a  class="nav" href="Home.html">Home</a>
 				</li>
 				<li class="bars">
 					<a  class="nav" id="currenttab" href="AboutUs.html">About Us</a>
@@ -20,24 +21,52 @@
 					<a  class="nav" href="Stream.html">Stream</a>
 				</li>
 				<li class="bars">
-					<a  class="nav" href="Events.html">Upcoming Events</a>
-				</li>
-				<li class="bars">
 					<a  class="nav" href="Weeklies.html">Weeklies</a>
 				</li>
 				<li class="bars">
 					<a  class="nav" href="PowerRanking.html">NYC's Power Ranking</a>
 				</li>
-			</ul>
+				<li class="bars">
+					<a  class="nav" href="Events.html">Upcoming Events</a>
+				</li>
+			</ul> <!--end of nav bar-->
 		</header>
 		<center><div id="content">
-			<h1 id="pagetitle">Leave a message!</h1>
-		</div></center>
+			<h1 id="pagetitle">Leave A Message!</h1>
+			<form>
+				Full name: 
+				<br>
+				<input type="text" name="fullname" placeholder="First and Last"> 
+				<br>
+				Email Address: 
+				<br>
+				<input type="text" name="email"> 
+				<br>
+				Gamer tag: 
+				<br>
+				<input type="text" name="gamertag" placeholder="With sponsor/crew">
+				<br>
+				Phone number: 
+				<br>
+				<input type="text" name="phonenumber" placeholder="Optional"> 
+				<br>
+				Reason for Contact: 
+				<br>
+				<input type="text" name="reason"> 
+				<br> 
+				<br>
+				<input type="button" name="submit" value="submit" onclick="alert('Thank you! We will get back to you ASAP')">
+			</form>
+		</div></center><!--content-->
+		<div class="push"></div> <!--Footer fixer-->
+		</div> <!--wrapper-->
 		<footer>
-			<a href="ContactUs.html" id="contact">Contact Us!</a> Our social media: 
+			<a href="ContactUs.html" id="contact">Contact Us!</a> 
+			<div id="socialcontact">
 			<a href="https://www.twitch.tv/houseof3000" target="_blank"><img class="socialicons" src="imgs/twitch.png"></a>
 			<a href="https://www.youtube.com/user/HouseOf3000" target="_blank"><img class="socialicons" src="imgs/youtube.png"></a>
 			<a href="https://twitter.com/houseof3000" target="_blank"><img class="socialicons" src="imgs/twitter.png"></a>
+			</div>
 		</footer>
 	</body>
 </html>

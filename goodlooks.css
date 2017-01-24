@@ -3,26 +3,25 @@
 	font-size: 60pt;
 }
 a{
-	text-decoration: none;
+	text-decoration: none; /*allows me to restyle my links later*/
 }
 header{
 	background-image: url(imgs/headerbg.png);
 	background-size: cover;
 	text-align: center;
 	color: rgb(253,151,31);
-	background-color: rgb(39,40,34);
 }
 #topul{
-	margin: 0;
-	padding: 7px 0px 1px 0px;
+	padding: 10px 0px 1px 0px;
 	background-color: rgba(0,0,0,0.7);
 	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1));
-	background: -webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1));
-	background: -moz-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1));
+	background: -webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)); /*for other browsers*/
+	background: -moz-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)); /*for Firefox*/
 	text-align: center;
 }
 .nav{
 	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
 	color: rgb(255, 204, 0);
 	padding: 10px 10px 1px 10px;
 }
@@ -30,13 +29,13 @@ header{
 	background-color: rgb(255, 204, 0);
 	color: rgb(39,40,34);
 	background: linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1));
-	background: -webkit-linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1));
-	background: -moz-linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1));
+	background: -webkit-linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1)); /*for other browsers*/
+	background: -moz-linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1)); /*for other browsers*/
 	transition: 0.5s;
 }
 #currenttab{
 	background-color: rgb(255, 204, 0);
-	color: rgb(39,40,34);
+	color: rgb(39,40,34); /*this entire block is to give clarity to which tab you're on*/
 	background: linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1));
 	background: -webkit-linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1));
 	background: -moz-linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1));
@@ -47,65 +46,88 @@ header{
 #content{
 	background-color: white;
 	border: solid;
+	border-color: rgb(253,151,31);
 	width: 728px;
 	color: black;
+	margin-top: 20px;
 }
 article{
 	text-align: justify, center;
 	max-width: 600px;
 	margin-bottom: 5px;
 }
-body img{
-	display: block;
-	margin: auto;
-}
 #bg{
 	font-family: 'Droid Serif', serif;
-	text-align: justify, center;
 	margin: 0%;
 	background-image: url(subtlebackgrounds/hixs_pattern_evolution.png);
-	color: white;
 }
 #logo{
 	padding-top: 20px;
 	width: 460px;
 	height: 280px;
 }
-/*#biotitle{
-	color: rgb(174,129,255);
-	text-shadow:  
-		-1px -1px 0 #000,  
-    	1px -1px 0 #000,
-    	-1px 1px 0 #000,
-     	1px 1px 0 #000; // Kept here in case I want my purple color, or text shadow
-     }*/
+.butt{
+	top: 380px;
+    left: 100px;
+    height: 140px;
+    font-size: 80px;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+#leftcheek{
+	margin-top: 300px;
+	margin-left: 70px;
+}
+#rightcheek{
+	margin-top: 300px;
+	margin-left: 925px;
+}
 footer{
 	margin-top: 5%;
-	padding: 10px 0px 1px 0px;
 	background-color: rgb(0,0,0);
 	text-align: center;
+	color: white;
+	display: flex;
 }
 #contact{
 	color: white;
-	padding: 10px 0px 1px 0px;
+	font-size: 24pt;
+	flex: 1;
+}
+#socialcontact{
+	flex: 1;
 }
 #contact:hover{
-	background-color: white;
-	color: black;
+	text-decoration: underline;
 	transition: 0.5s;
 }
-.socialicons{
+.socialicons1, .socialicons{
 	width: 36px;
 	height: 36px;
 	display: inline-block;
 }
-.names, .ntitle{
-	font-family: 'Nova Slim', cursive;
+.socialicons{
+	padding-right: 2px;
 }
-.social{
-	color: black;
+.member{
 	font-family: 'Nova Slim', cursive;
+	min-height: 250px;
+}
+.headshot{
+	width: 130px;
+	height: 200px;
+	position: absolute;
+	margin-left: 90px;
+	display: block;
+}
+.names{
+	font-size: 16pt;
+}
+.sotag{
+	color: black;
 	line-height: 36px;
+	font-weight: bold;
 }
 #poster{
 	margin-bottom: 5px;
@@ -113,4 +135,37 @@ footer{
 .pR{
 	width: 720px; 
 	height: 600px; 
+	margin-bottom: 10px;
+}
+* {
+margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+footer, .push {
+	height: 4em;
+	clear: both;
+}
+#devtwitter, #helptwitter, #autwitter{
+	color: blue;
+}
+#devtwitter:hover, #helptwitter:hover, #autwitter:hover{
+	background-color: blue;
+	color: black;
+	transition: 0.5s;
+}
+#autwitch{
+	color: purple;
+}
+#autwitch:hover{
+	background-color: purple;
+	color: black;
+	transition: 0.5s;
 }

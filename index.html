@@ -5,39 +5,38 @@
 		<link rel="shortcut icon" type="image/x-icon" href="imgs/72x72.png">
 		<link rel="stylesheet" type="text/css" href="goodlooks.css">
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Orbitron|Nova+Slim" rel="stylesheet">
+		<style type="text/css">
+			body{
+				background-image: url(imgs/headerbg.png);
+				background-color: rgb(39,40,34);
+			}
+			#houseLogo{
+				position: absolute;
+				margin-top: 350px;
+				margin-left: 397px;
+			}
+		</style>
 	</head>
-	<body id="bg">
-		<header>
-			<img src="imgs/HouseLogo.png" id="logo">
-			<ul id="topul">
-				<li class="bars">
-					<a  class="nav" id="currenttab" href="index.html">Home</a>
-				</li>
-				<li class="bars">
-					<a  class="nav" href="AboutUs.html">About Us</a>
-				</li>
-				<li class="bars">
-					<a  class="nav" href="Stream.html">Stream</a>
-				</li>
-				<li class="bars">
-					<a  class="nav" href="Weeklies.html">Weeklies</a>
-				</li>
-				<li class="bars">
-					<a  class="nav" href="PowerRanking.html">NYC's Power Ranking</a>
-				</li>
-				<li class="bars">
-					<a  class="nav" href="Events.html">Upcoming Events</a>
-				</li>
-			</ul>
-		</header>
-		<center><div id="content">
-			<!--<img src="me.jpg" width="200" height="350" id="selfie">-->
-		</div></center>
-		<footer>
-			<a href="ContactUs.html" id="contact">Contact Us!</a> Our social media: 
-			<a href="https://www.twitch.tv/houseof3000" target="_blank"><img class="socialicons" src="imgs/twitch.png"></a>
-			<a href="https://www.youtube.com/user/HouseOf3000" target="_blank"><img class="socialicons" src="imgs/youtube.png"></a>
-			<a href="https://twitter.com/houseof3000" target="_blank"><img class="socialicons" src="imgs/twitter.png"></a>
-		</footer>
+	<body>
+	<img src="imgs/HouseLogo.png" id="houseLogo" width="460px" height="280px">
+	<script type="text/javascript">
+	document.getElementById("houseLogo").onload = function() {Move()};
+	function Move() {
+			var elem = document.getElementById('houseLogo'); //the element
+			var pos = 0; //means position
+			var id = setInterval(frame, 1);//setInterval is predefined, can only be used in a variable. bigger number, slower animation.
+
+		function frame() {
+			if (pos == 426) { //if it reaches position 350...
+				clearInterval(id); // stop animation
+				window.location.href = 'Home.html'; //once done, bring me home
+			}
+			else{ //if it hasn't hit the final position, move position incremently
+				pos++
+				elem.style.bottom = pos + 'px'; //change logo position, from the bottom
+			}
+		}
+	}
+	</script>
 	</body>
 </html>

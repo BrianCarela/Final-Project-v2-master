@@ -7,11 +7,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Orbitron" rel="stylesheet">
 	</head>
 	<body id="bg">
+		<div class="wrapper">
 		<header>
 			<img src="imgs/HouseLogo.png" id="logo">
 			<ul id="topul">
 				<li class="bars">
-					<a  class="nav" href="index.html">Home</a>
+					<a  class="nav" href="Home.html">Home</a>
 				</li>
 				<li class="bars">
 					<a  class="nav" href="AboutUs.html">About Us</a>
@@ -28,26 +29,30 @@
 				<li class="bars">
 					<a  class="nav" href="Events.html">Upcoming Events</a>
 				</li>
-			</ul>
+			</ul> <!--end of nav bar-->
 		</header>
+		<button class="butt" id="leftcheek" onclick="plusDivs(-1)">&#10094;</button>
 		<center><div id="content">
 			<h1 id="pagetitle">Our Top Players!</h1>
+			<img class="pR" src="imgs/2016_Q3.png">
 			<img class="pR" src="imgs/2015_Q3.jpg">
 			<img class="pR" src="imgs/2015_Q4.jpg">
 			<img class="pR" src="imgs/2016_Q1.jpg">
 			<img class="pR" src="imgs/2016_Q2.png">
-			<img class="pR" src="imgs/2016_Q3.png">
-		<button class="butt" id="back" onclick="plusDivs(-1)">&#10094;</button>
-		<button class="butt" id="forward" onclick="plusDivs(+1)">&#10095;</button>
-		</div></center>
+		</div></center><!--content-->
+		<button class="butt" id="rightcheek" onclick="plusDivs(+1)">&#10095;</button>
+		<div class="push"></div> <!--Footer fixer-->
+		</div> <!--wrapper-->
 		<footer>
-			<a href="ContactUs.html" id="contact">Contact Us!</a> Our social media: 
+			<a href="ContactUs.html" id="contact">Contact Us!</a> 
+			<div id="socialcontact">
 			<a href="https://www.twitch.tv/houseof3000" target="_blank"><img class="socialicons" src="imgs/twitch.png"></a>
 			<a href="https://www.youtube.com/user/HouseOf3000" target="_blank"><img class="socialicons" src="imgs/youtube.png"></a>
 			<a href="https://twitter.com/houseof3000" target="_blank"><img class="socialicons" src="imgs/twitter.png"></a>
+			</div>
 		</footer>
 	</body>
-	<script type="text/javascript">
+	<script type="text/javascript"> //My Slideshow Script
 		var slideIndex = 1;
 		showDivs(slideIndex);
 
