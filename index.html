@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<title>#Ho3K</title>
-		<link rel="shortcut icon" type="image/x-icon" href="imgs/72x72.png">
-		<link rel="stylesheet" type="text/css" href="goodlooks.css">
+		<link rel="shortcut icon" type="image/x-icon" href="imgs/72x72.png"><!--Icon on the browser tabs-->
+		<!-- <link rel="stylesheet" type="text/css" href="goodlooks.css"> -->
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Orbitron|Nova+Slim" rel="stylesheet">
 		<style type="text/css">
 			body{
@@ -15,12 +15,12 @@
 				margin-top: 350px;
 				margin-left: 397px;
 			}
-		</style>
+		</style> <!--Internal style sheet because external doesn't apply-->
 	</head>
 	<body>
 	<img src="imgs/HouseLogo.png" id="houseLogo" width="460px" height="280px">
 	<script type="text/javascript">
-	document.getElementById("houseLogo").onload = function() {Move()};
+	document.getElementById("houseLogo").onload = function() {Move()};//Function begins once the page loads
 	function Move() {
 			var elem = document.getElementById('houseLogo'); //the element
 			var pos = 0; //means position

@@ -19,13 +19,13 @@ header{
 	background: -moz-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,1)); /*for Firefox*/
 	text-align: center;
 }
-.nav{
+.nav{ /*Modern navigation bar*/
 	font-family: 'Orbitron', sans-serif;
 	font-size: 20px;
 	color: rgb(255, 204, 0);
 	padding: 10px 10px 1px 10px;
 }
-.nav:hover{
+.nav:hover{ /*Hover effects make any "clickable" clear*/
 	background-color: rgb(255, 204, 0);
 	color: rgb(39,40,34);
 	background: linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1));
@@ -33,17 +33,17 @@ header{
 	background: -moz-linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1)); /*for other browsers*/
 	transition: 0.5s;
 }
-#currenttab{
+#currenttab{ /*this entire block is to give clarity to which tab you're on*/
 	background-color: rgb(255, 204, 0);
-	color: rgb(39,40,34); /*this entire block is to give clarity to which tab you're on*/
+	color: rgb(39,40,34); 
 	background: linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1));
 	background: -webkit-linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1));
 	background: -moz-linear-gradient(rgba(255,204,0,0.6), rgba(255,204,0,1));
 }
-.bars{
+.bars{ /*Makes nav bar horizontal*/
 	display: inline-block;
 }
-#content{
+#content{ /*All content is isolated in it's own block, center page*/
 	background-color: white;
 	border: solid;
 	border-color: rgb(253,151,31);
@@ -51,22 +51,22 @@ header{
 	color: black;
 	margin-top: 20px;
 }
-article{
+article{ /*Text doesn't touch any edges*/
 	text-align: justify, center;
 	max-width: 600px;
 	margin-bottom: 5px;
 }
 #bg{
 	font-family: 'Droid Serif', serif;
-	margin: 0%;
+	margin: 0%; /*helps everything bleed off the page*/
 	background-image: url(subtlebackgrounds/hixs_pattern_evolution.png);
 }
-#logo{
+#logo{ /*comfortably large size*/
 	padding-top: 20px;
 	width: 460px;
 	height: 280px;
 }
-.butt{
+.butt{ /*buttons*/
 	top: 380px;
     left: 100px;
     height: 140px;
@@ -75,11 +75,11 @@ article{
     background-color: black;
     position: absolute;
 }
-#leftcheek{
+#leftcheek{ /*hahaha*/ /*left button position*/
 	margin-top: 300px;
 	margin-left: 70px;
 }
-#rightcheek{
+#rightcheek{ /*hahaha*/ /*right button position*/
 	margin-top: 300px;
 	margin-left: 925px;
 }
@@ -95,26 +95,26 @@ footer{
 	font-size: 24pt;
 	flex: 1;
 }
-#socialcontact{
+#socialcontact{ /*Social media icons in the footer*/
 	flex: 1;
 }
 #contact:hover{
 	text-decoration: underline;
 	transition: 0.5s;
 }
-.socialicons1, .socialicons{
+.socialicons1, .socialicons{ /*Standard size for social media icons, footer & about page*/
 	width: 36px;
 	height: 36px;
 	display: inline-block;
 }
-.socialicons{
+.socialicons{ /*space btwn the icons in the footer*/
 	padding-right: 2px;
 }
-.member{
+.member{ /*About Us text*/
 	font-family: 'Nova Slim', cursive;
 	min-height: 250px;
 }
-.headshot{
+.headshot{ /*standard size for staff images*/
 	width: 130px;
 	height: 200px;
 	position: absolute;
@@ -124,7 +124,7 @@ footer{
 .names{
 	font-size: 16pt;
 }
-.sotag{
+.sotag{ /*the text on the About Us, next to the social media icons*/
 	color: black;
 	line-height: 36px;
 	font-weight: bold;
@@ -132,11 +132,12 @@ footer{
 #poster{
 	margin-bottom: 5px;
 }
-.pR{
+.pR{ /*standard images for the slideshow, doesn't affect the elements around them*/
 	width: 720px; 
 	height: 600px; 
 	margin-bottom: 10px;
 }
+/*The following 16 lines are to stick the footer to the bottom of the page*/
 * {
 margin: 0;
 }
@@ -153,8 +154,9 @@ footer, .push {
 	height: 4em;
 	clear: both;
 }
-#devtwitter, #helptwitter, #autwitter{
-	color: blue;
+/*the rest of this page is so you know you can click the social media links on About Us*/
+#devtwitter, #helptwitter, #autwitter{ 
+	color: blue;						
 }
 #devtwitter:hover, #helptwitter:hover, #autwitter:hover{
 	background-color: blue;
